@@ -4,7 +4,7 @@ Ce dépôt héberge les releases de l'application Fast Backtest ainsi que sa pag
 
 ## GitHub Pages
 
-La page de documentation est accessible à l'adresse : https://fintechcpp.github.io/fast-back-test-app-releases/
+La page de documentation est accessible à l'adresse : https://fintechcpp.github.io/fast-backtest-app-releases/
 
 ## Contenu
 
