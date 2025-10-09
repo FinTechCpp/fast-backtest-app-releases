@@ -56,7 +56,7 @@
                 <div class="downloads-grid">
                     <div class="card">
                         <h3>Version Stable <span class="version-tag">v1.0.0.30</span></h3>
-                        <p>[Notes de version à venir]</p>
+                        <p>Dossier zip contenant l'executable et DLL</p>
                         <a href="https://fintechcpp.github.io/fast-backtest-app-releases/downloads/fast-backtest-app-windows-v1.0.0.30.zip" class="button">Télécharger pour Windows</a>
                     </div>
 
@@ -70,12 +70,6 @@
                         <h3>Linux</h3>
                         <p>Archive tar.gz pour distributions Debian/Ubuntu</p>
                         <a href="https://fintechcpp.github.io/fast-backtest-app-releases/downloads/fast-backtest-app-linux-v1.0.0.30.tar.gz" class="button">Télécharger pour Linux</a>
-                    </div>
-
-                    <div class="card">
-                        <h3>Version Beta</h3>
-                        <p>[Notes de version à venir]</p>
-                        <a href="#" class="button">Télécharger la Beta</a>
                     </div>
                 </div>
             </div>
@@ -103,7 +97,34 @@
 
                     <div id="installation">
                         <h3>Installation</h3>
-                        <p>[Contenu à venir]</p>
+                        <p>Instructions d'installation et de lancement par plateforme :</p>
+                        <ul>
+                            <li><strong>Windows (64-bit)</strong>
+                                <p>Téléchargez le fichier ZIP, décompressez-le dans un dossier. Le binaire s'appelle <code>backtestapp.exe</code>. Double-cliquez sur l'exécutable ou lancez-le depuis PowerShell :</p>
+                                <pre>cd C:\chemin\vers\fast-backtest-app-windows
+.\backtestapp.exe</pre>
+                                <p>Le fichier de configuration par défaut <code>backtest_config.ini</code> peut être édité dans le même dossier.</p>
+                            </li>
+
+                            <li><strong>macOS (Intel & Apple Silicon)</strong>
+                                <p>Téléchargez le DMG, montez-le puis glissez-déposez <code>FastBacktestApp.app</code> dans le dossier <code>/Applications</code>. Pour lancer :</p>
+                                <pre>open /Applications/FastBacktestApp.app</pre>
+                                <p>Si macOS bloque l'ouverture, autorisez l'application via Sécurité et confidentialité → Autoriser quand même.</p>
+                            </li>
+
+                            <li><strong>Linux (Debian/Ubuntu)</strong>
+                                <p>Téléchargez l'archive <code>.tar.gz</code> et extrayez-la :</p>
+                                <pre>tar -xzf fast-backtest-app-linux-*.tar.gz
+cd fast-backtest-app-linux
+./backtestapp.sh</pre>
+                                <p>Le script <code>backtestapp.sh</code> configure <code>LD_LIBRARY_PATH</code> et <code>QT_PLUGIN_PATH</code> pour utiliser les bibliothèques fournies. Assurez-vous que le script est exécutable (<code>chmod +x backtestapp.sh</code>).</p>
+                            </li>
+                        </ul>
+                        <p>Remarques :</p>
+                        <ul>
+                            <li>Conservez le dossier distribué tel quel pour que les bibliothèques Qt et plugins soient trouvés correctement.</li>
+                            <li>Si vous rencontrez des erreurs liées à des bibliothèques manquantes, vérifiez les fichiers fournis dans le dossier <code>lib</code> / <code>plugins</code> (Linux) ou la présence des DLL (Windows).</li>
+                        </ul>
                     </div>
 
                     <div id="configuration">
@@ -115,31 +136,70 @@
             </div>
         </section>
 
-        <section id="examples" class="section">
-            <div class="container content-width">
-                <h2>Exemples de Stratégies</h2>
-                <div class="card">
-                    <h3>Stratégie de Momentum Simple</h3>
-                    <p>[Exemple de code à venir]</p>
-                </div>
-                <div class="card">
-                    <h3>Stratégie de Mean Reversion</h3>
-                    <p>[Exemple de code à venir]</p>
-                </div>
-            </div>
-        </section>
-
         <section id="support" class="section">
             <div class="container content-width">
-                <h2>Support & Communauté</h2>
-                <div class="card">
-                    <h3>FAQ</h3>
-                    <p>[Questions fréquentes à venir]</p>
+            <h2>Support & Communauté</h2>
+
+            <div class="card">
+                <h3>FAQ</h3>
+                <div class="faq">
+                <details>
+                    <summary>Quelles plateformes sont supportées ?</summary>
+                    <p>Windows (64-bit), macOS (Intel & Apple Silicon) et Linux (Debian/Ubuntu). Utilisez les liens de la section Téléchargement pour chaque package.</p>
+                </details>
+
+                <details>
+                    <summary>Quel format pour les données OHLC ?</summary>
+                    <p>CSV avec colonnes Date, Open, High, Low, Close, Volume. La date peut être au format ISO (YYYY-MM-DD ou YYYY-MM-DD HH:MM:SS). Les en-têtes sont recommandés.</p>
+                </details>
+
+                <details>
+                    <summary>Comment lancer un backtest ?</summary>
+                    <p>Chargez votre fichier CSV via Fichier → Ouvrir, sélectionnez la stratégie et la période, puis cliquez sur "Lancer le backtest".</p>
+                </details>
+
+                <details>
+                    <summary>Où trouver les logs et la configuration ?</summary>
+                    <p>Les logs sont dans le dossier <code>logs</code> situé à côté de l'exécutable. Le fichier de configuration par défaut est <code>backtest_config.ini</code> dans le même dossier. Sur Linux, vérifiez aussi <code>~/.fast-backtest-app/</code> pour les configs utilisateur.</p>
+                </details>
+
+                <details>
+                    <summary>Comment mettre à jour l'application ?</summary>
+                    <p>Téléchargez la nouvelle version depuis la page de téléchargement et remplacez les fichiers. Conservez la structure du dossier fourni pour que Qt et les bibliothèques soient correctement résolues.</p>
+                </details>
+
+                <details>
+                    <summary>Licence et utilisation commerciale</summary>
+                    <p>Consultez le fichier <code>LICENSE</code> inclus dans l'archive ou la page du dépôt GitHub pour les termes de licence et les restrictions d'utilisation.</p>
+                </details>
                 </div>
-                <div class="card">
-                    <h3>Signaler un bug</h3>
-                    <p>[Instructions à venir]</p>
-                </div>
+            </div>
+
+            <div class="card">
+                <h3>Signaler un bug</h3>
+                <p>Avant d'ouvrir une issue, merci de vérifier la FAQ et les issues existantes.</p>
+
+                <ol>
+                <li>
+                    <strong>Rassembler les informations :</strong>
+                    version de l'application (Aide → À propos), système d'exploitation et architecture, fichier <code>backtest_config.ini</code>, extrait de données reproduisant le problème, captures d'écran et logs (dossier <code>logs</code>).
+                </li>
+                <li>
+                    <strong>Documenter la reproduction :</strong>
+                    étapes exactes pour reproduire, comportement attendu vs observé, messages d'erreur complets ou sortie terminal.
+                </li>
+                <li>
+                    <strong>Ouvrir une issue :</strong>
+                    Créez une nouvelle issue sur GitHub → <a href="https://github.com/FinTechCpp/fast-backtest-app-releases/issues">https://github.com/FinTechCpp/fast-backtest-app-releases/issues</a>. Collez les informations ci‑dessus et joignez les fichiers (logs, extrait CSV).
+                </li>
+                <li>
+                    <strong>Alternative :</strong>
+                    Si vous ne pouvez pas attacher de fichiers via GitHub, compressez-les et envoyez-les à <em>support@fintechcpp.org</em> en précisant le lien de l'issue ou le titre du problème.
+                </li>
+                </ol>
+
+                <p>Les rapports contenant une reproduction minimale et les logs sont traités en priorité.</p>
+            </div>
             </div>
         </section>
     </main>
