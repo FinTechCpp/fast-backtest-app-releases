@@ -79,9 +79,7 @@
                         <p>Moteur C++20 multi-threadé pour des backtests ultra-rapides. Testez plusieurs années de données historiques en moins de 5 secondes.</p>
                         <ul class="feature-list">
                             <li>Optimisations avancées du code</li>
-                            <li>Traitement parallèle des données</li>
-                            <li>Cache intelligent des indicateurs</li>
-                            <li>Consommation mémoire optimisée</li>
+                            <li>Calcul incrémental des indicateurs</li>
                         </ul>
                     </div>
 
@@ -92,7 +90,7 @@
                         <ul class="feature-list">
                             <li>Design cohérent multi-plateforme</li>
                             <li>Panneaux de configuration intuitifs</li>
-                            <li>Gestion de profils et templates</li>
+                            <li>Création de stratégies sans code</li>
                             <li>Mise à jour automatique intégrée</li>
                         </ul>
                     </div>
@@ -102,7 +100,7 @@
                         <h3>Visualisations Avancées</h3>
                         <p>Graphiques haute qualité avec ChartDirector pour analyser vos résultats en profondeur.</p>
                         <ul class="feature-list">
-                            <li>Graphiques de prix interactifs</li>
+                            <li>Graphiques en chandeliers interactifs</li>
                             <li>Courbes d'équité détaillées</li>
                             <li>Heatmaps de performance</li>
                             <li>Indicateurs techniques overlay</li>
@@ -143,113 +141,6 @@
                             <li>Gestion du slippage</li>
                             <li>Limites de risque configurables</li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- How It Works Section -->
-        <section id="how-it-works" class="section section-how">
-            <div class="container">
-                <h2 class="section-title">Comment ça fonctionne ?</h2>
-                <p class="section-subtitle">Un workflow simple et efficace en 4 étapes</p>
-                
-                <div class="steps-container">
-                    <div class="step-item">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h3>Configurez vos paramètres</h3>
-                            <p>Choisissez votre symbole, période, intervalle et paramètres de broker (spread, commission, levier).</p>
-                            <div class="step-image-placeholder">[Image: Panel de configuration générale]</div>
-                        </div>
-                    </div>
-
-                    <div class="step-item">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h3>Définissez votre stratégie</h3>
-                            <p>Utilisez l'éditeur visuel pour créer vos conditions d'entrée/sortie avec des filtres basés sur des indicateurs techniques.</p>
-                            <div class="step-image-placeholder">[Image: Éditeur de stratégie]</div>
-                        </div>
-                    </div>
-
-                    <div class="step-item">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h3>Lancez le backtest</h3>
-                            <p>Cliquez sur "Lancer le backtest" et observez le moteur C++ traiter des milliers de bougies en quelques secondes.</p>
-                            <div class="step-image-placeholder">[Image: Bouton et progress bar]</div>
-                        </div>
-                    </div>
-
-                    <div class="step-item">
-                        <div class="step-number">4</div>
-                        <div class="step-content">
-                            <h3>Analysez les résultats</h3>
-                            <p>Explorez les statistiques détaillées, graphiques interactifs et l'historique complet de tous vos trades.</p>
-                            <div class="step-image-placeholder">[Image: Vue des résultats]</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Technical Architecture Section -->
-        <section id="architecture" class="section section-tech">
-            <div class="container">
-                <h2 class="section-title">Architecture Technique</h2>
-                <p class="section-subtitle">Une stack moderne pour des performances maximales</p>
-                
-                <div class="tech-grid">
-                    <div class="tech-card">
-                        <h3>🔥 Backend C++20</h3>
-                        <p><strong>Moteur de backtest ultra-rapide</strong></p>
-                        <ul>
-                            <li>Multi-threading pour calculs parallèles</li>
-                            <li>Templates modernes et optimisations compiler</li>
-                            <li>Gestion mémoire efficace avec smart pointers</li>
-                            <li>Sérialisation binaire avec Cereal</li>
-                        </ul>
-                    </div>
-
-                    <div class="tech-card">
-                        <h3>🖥️ Frontend Qt 6.8.3</h3>
-                        <p><strong>Interface native multi-plateforme</strong></p>
-                        <ul>
-                            <li>Widgets natifs pour chaque OS</li>
-                            <li>Signal/Slots pour communication asynchrone</li>
-                            <li>Model-View architecture pour la data</li>
-                            <li>Deployment automatisé par CMake</li>
-                        </ul>
-                    </div>
-
-                    <div class="tech-card">
-                        <h3>📊 ChartDirector</h3>
-                        <p><strong>Bibliothèque de graphiques professionnels</strong></p>
-                        <ul>
-                            <li>Rendering haute performance</li>
-                            <li>Support de millions de points de données</li>
-                            <li>Graphiques financiers spécialisés</li>
-                            <li>Export haute résolution</li>
-                        </ul>
-                    </div>
-
-                    <div class="tech-card">
-                        <h3>🧠 Machine Learning</h3>
-                        <p><strong>Intégration ONNX Runtime</strong></p>
-                        <ul>
-                            <li>Chargement de modèles ONNX</li>
-                            <li>Inférence en temps réel pendant backtest</li>
-                            <li>Features normalisées automatiquement</li>
-                            <li>Compatible TensorFlow, PyTorch</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="architecture-diagram">
-                    <h3 class="text-center">Flux de Données</h3>
-                    <div class="diagram-placeholder">
-                        [Diagramme: CSV Data → DataLoader → BacktestEngine (C++) → Results → Qt UI → ChartDirector Visualizations]
                     </div>
                 </div>
             </div>
@@ -424,7 +315,7 @@
 2024-01-01T09:30:00,100.5,101.2,100.1,101.0,5000
 2024-01-01T09:31:00,101.0,101.5,100.8,101.3,4500</code>
                             </div>
-                            <p>Importez vos fichiers CSV via le menu <strong>Données > Importer</strong></p>
+                            <p>Importez vos fichiers CSV via le menu <strong>Données > Importer fichier local</strong></p>
                             <div class="tip-box">
                                 <strong>💡 Astuce:</strong> Utilisez le notebook Jupyter fourni (<code>Notebooks/fetch_by_ibkr.py</code>) pour télécharger des données historiques depuis Interactive Brokers.
                             </div>
@@ -445,7 +336,15 @@
                                 <li><strong>Commission:</strong> Frais par trade</li>
                                 <li><strong>Levier:</strong> Limite de levier (en multiple du capital)</li>
                             </ul>
-                            <div class="screenshot-placeholder">[Capture d'écran: Panel de configuration générale]</div>
+                            <figure class="screenshot-placeholder">
+                                <a href="images/general_params.png" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/general_params.png"
+                                             alt="Paramètres généraux : Symbole, Période de données, Intervalle, Date de fin"
+                                             loading="lazy"
+                                             style="max-width:100%;height:auto;display:block;margin:0 auto;" />
+                                </a>
+                                <figcaption>Capture d'écran — Panel de paramètres généraux (cliquer pour agrandir)</figcaption>
+                            </figure>
                         </div>
                     </div>
 
@@ -472,7 +371,15 @@
                                 <li><strong>Take Profit:</strong> Ratio SL, 1.5:1</li>
                             </ol>
                             
-                            <div class="screenshot-placeholder">[Capture d'écran: Éditeur de stratégie avec filtres]</div>
+                            <figure class="screenshot-placeholder">
+                                <a href="images/strategy_config.png" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/strategy_config.png"
+                                             alt="Éditeur de stratégie — configuration des filtres"
+                                             loading="lazy"
+                                             style="max-width:100%;height:auto;display:block;margin:0 auto;" />
+                                </a>
+                                <figcaption>Capture d'écran — Éditeur de stratégie (cliquer pour agrandir)</figcaption>
+                            </figure>
                             
                             <div class="tip-box">
                                 <strong>💡 Indicateurs disponibles:</strong> RSI, EMA, SMA, MACD, Bollinger Bands, Stochastic, ATR, CCI, SuperTrend, Pivot Points, et bien plus !
@@ -491,7 +398,15 @@
                                 <li>Simuler chaque trade avec spreads/commissions</li>
                                 <li>Générer les résultats en quelques secondes</li>
                             </ul>
-                            <div class="screenshot-placeholder">[Capture d'écran: Bouton de lancement + barre de progression]</div>
+                            <figure class="screenshot-placeholder">
+                                <a href="images/backtest_launch_button.png" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/backtest_launch_button.png"
+                                         alt="Bouton Lancer le backtest et barre de progression"
+                                         loading="lazy"
+                                         style="max-width:100%;height:auto;display:block;margin:0 auto;" />
+                                </a>
+                                <figcaption>Capture d'écran : Bouton de lancement + barre de progression (cliquer pour agrandir)</figcaption>
+                            </figure>
                         </div>
                     </div>
 
@@ -510,7 +425,15 @@
                                 <li>Nombre de trades, exposition au marché</li>
                                 <li>Distribution des trades (heatmap horaire)</li>
                             </ul>
-                            <div class="screenshot-placeholder">[Capture d'écran: Vue des statistiques]</div>
+                            <figure class="screenshot-placeholder">
+                                <a href="images/result_interface.png" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/result_interface.png"
+                                         alt="Vue des statistiques — résultat du backtest"
+                                         loading="lazy"
+                                         style="max-width:100%;height:auto;display:block;margin:0 auto;" />
+                                </a>
+                                <figcaption>Capture d'écran — Vue des statistiques (cliquer pour agrandir)</figcaption>
+                            </figure>
                             
                             <h4>2. Graphiques</h4>
                             <ul>
@@ -519,15 +442,33 @@
                                 <li>Courbe d'équité vs Buy & Hold</li>
                                 <li>Zoom interactif sur trades spécifiques</li>
                             </ul>
-                            <div class="screenshot-placeholder">[Capture d'écran: ChartView avec trades]</div>
+                            <figure class="screenshot-placeholder">
+                                <a href="images/chart_interface.png" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/chart_interface.png"
+                                         alt="Interface graphique — ChartView montrant chandeliers et marqueurs d'entrées/sorties"
+                                         loading="lazy"
+                                         style="max-width:100%;height:auto;display:block;margin:0 auto;" />
+                                </a>
+                                <figcaption>Capture d'écran — ChartView avec trades (cliquer pour agrandir)</figcaption>
+                            </figure>
                             
-                            <h4>3. Historique</h4>
+                            <h4>3. Tableau des trades</h4>
                             <ul>
                                 <li>Table détaillée de tous les trades</li>
-                                <li>Date entrée/sortie, prix, P&L</li>
+                                <li>Date entrée/sortie, prix, P&amp;L</li>
                                 <li>Durée, raison de clôture</li>
                                 <li>Exportable en CSV</li>
                             </ul>
+
+                            <figure class="screenshot-placeholder">
+                                <a href="images/trades_table.png" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/trades_table.png"
+                                         alt="Tableau des trades — colonnes : Id, Type, Taille, Prix d'entrée, Prix de sortie, P&L, Durée, Date d'entrée, Date de sortie, SL, TP, Clôture"
+                                         loading="lazy"
+                                         style="max-width:100%;height:auto;display:block;margin:0 auto;" />
+                                </a>
+                                <figcaption>Capture d'écran — Tableau des trades (cliquer pour agrandir)</figcaption>
+                            </figure></figure>
                         </div>
                     </div>
                 </div>
@@ -539,53 +480,6 @@
             <div class="container">
                 <h2 class="section-title">Documentation</h2>
                 <div class="content-width">
-                    <div class="doc-grid">
-                        <div class="doc-card">
-                            <h3>📚 Guide Utilisateur</h3>
-                            <p>Instructions détaillées pour toutes les fonctionnalités de l'interface.</p>
-                            <ul>
-                                <li>Configuration des paramètres</li>
-                                <li>Création de stratégies complexes</li>
-                                <li>Interprétation des métriques</li>
-                                <li>Gestion des profils</li>
-                            </ul>
-                        </div>
-
-                        <div class="doc-card">
-                            <h3>🔧 Guide Technique</h3>
-                            <p>Comprendre le moteur de backtest et ses paramètres avancés.</p>
-                            <ul>
-                                <li>Modes Netting vs Hedging</li>
-                                <li>Gestion des spreads et slippage</li>
-                                <li>Algorithmes de Stop Loss/Take Profit</li>
-                                <li>Limites de risque journalières</li>
-                            </ul>
-                        </div>
-
-                        <div class="doc-card">
-                            <h3>📊 Format de Données</h3>
-                            <p>Spécifications pour vos fichiers CSV de données de marché.</p>
-                            <div class="code-block">
-                                <code># Format requis:
-timestamp,open,high,low,close,volume
-# Timestamp: ISO 8601 format
-# Prix: format décimal
-# Volume: optionnel</code>
-                            </div>
-                        </div>
-
-                        <div class="doc-card">
-                            <h3>🧪 Machine Learning</h3>
-                            <p>Intégrez vos modèles ML entrainés pour des signaux avancés.</p>
-                            <ul>
-                                <li>Export de modèles en ONNX</li>
-                                <li>Notebook de conversion (TensorFlow/PyTorch → ONNX)</li>
-                                <li>Configuration des features normalisées</li>
-                                <li>Interprétation des prédictions</li>
-                            </ul>
-                        </div>
-                    </div>
-
                     <div class="installation-guide">
                         <h3>Installation par Plateforme</h3>
                         
@@ -645,12 +539,6 @@ chmod +x backtestapp.sh
                             <li>Si vous rencontrez des erreurs liées à des bibliothèques manquantes, vérifiez les fichiers fournis dans le dossier <code>lib</code> / <code>plugins</code> (Linux) ou la présence des DLL (Windows).</li>
                         </ul>
                     </div>
-
-                    <div id="configuration">
-                        <h3>Configuration</h3>
-                        <p>Définissez votre stratégie sans code grâce à l'éditeur de filtres visuels.
-                        </p>
-                    </div>
                 </div>
             </div>
         </section>
@@ -693,6 +581,17 @@ chmod +x backtestapp.sh
                     <div class="contribute-card">
                         <h3>👨‍💻 Contribuer au Code</h3>
                         <p>Développez de nouvelles fonctionnalités ou corrigez des bugs !</p>
+                    <p>Suivez ces étapes pour commencer :</p>
+                        <ol>
+                            <li>Créez un fork du dépôt GitHub</li>
+                            <li>Clonez votre fork</li>
+                            <li>Initialisez les sous-modules</li>
+                            <li>Créez une branche pour votre feature/bugfix</li>
+                            <li>Développez vos changements</li>
+                            <li>Build et testez localement</li>
+                            <li>Faites un commit clair et poussez vers votre fork</li>
+                            <li>Ouvrez une Pull Request vers le dépôt principal</li>
+                        </ol>
                         <div class="code-block">
                             <code># Fork et clone
 git clone https://github.com/[YOU]/fast-backtest-app
@@ -929,9 +828,9 @@ cmake --build build --config Debug --parallel
                             <div class="faq-content">
                                 <p>Format CSV avec les colonnes suivantes:</p>
                                 <div class="code-block">
-                                    <code>timestamp,open,high,low,close,volume</code>
+                                    <code>,date,open,high,low,close,volume</code>
                                 </div>
-                                <p><strong>timestamp:</strong> Format ISO 8601 (YYYY-MM-DDTHH:MM:SS)</p>
+                                <p><strong>date:</strong> Format ISO 8601 (YYYY-MM-DDTHH:MM:SS)</p>
                                 <p><strong>Prix:</strong> Format décimal (point comme séparateur)</p>
                                 <p><strong>Volume:</strong> Optionnel</p>
                             </div>
@@ -944,7 +843,7 @@ cmake --build build --config Debug --parallel
                                 <ol>
                                     <li>Placez vos fichiers CSV dans le dossier <code>marketData/</code></li>
                                     <li>Ou utilisez Menu → Données → Définir dossier personnalisé</li>
-                                    <li>Ou utilisez Données → Importer</li>
+                                    <li>Ou utilisez Données → Importer fichier local</li>
                                 </ol>
                                 <p>L'application détecte automatiquement les nouveaux fichiers.</p>
                             </div>
