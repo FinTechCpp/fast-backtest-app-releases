@@ -3,146 +3,640 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fast Backtest App - Application de backtesting rapide pour vos stratégies de trading">
-    <title>Fast Backtest App - Backtesting rapide et efficace</title>
+    <meta name="description" content="Fast Backtest App - Application de backtesting haute performance en C++ avec Qt6 pour tester vos stratégies de trading">
+    <meta name="keywords" content="backtest, trading, C++, Qt6, stratégie, performance, analyse technique, indicateurs">
+    <meta name="author" content="FinTech C++">
+    <title>Fast Backtest App - Backtesting Ultra-Rapide pour Traders Professionnels</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Fast Backtest App</h1>
-            <p>Une solution puissante pour le backtesting de vos stratégies de trading</p>
-            <a href="#download" class="button">Télécharger</a>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-background"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">🚀 Open Source • Haute Performance • Multi-Plateforme</div>
+            <h1 class="hero-title">Fast Backtest App</h1>
+            <p class="hero-subtitle">Testez vos stratégies de trading avec une vitesse et une précision inégalées</p>
+            <p class="hero-description">
+                Backtesting ultra-rapide grâce à C++20, interface intuitive Qt6, 
+                analyse avancée avec ChartDirector. Plusieurs années de données traitées en quelques secondes.
+            </p>
+            <div class="hero-buttons">
+                <a href="#download" class="button button-primary button-large">
+                    <span class="button-icon">⬇</span> Télécharger Gratuitement
+                </a>
+                <a href="#get-started" class="button button-secondary button-large">
+                    <span class="button-icon">📖</span> Guide de démarrage
+                </a>
+                <a href="https://github.com/FinTechCpp/fast-backtest-app" target="_blank" class="button button-outline button-large">
+                    <span class="button-icon">⭐</span> GitHub
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-value">< 5s</div>
+                    <div class="stat-label">Backtest multi-années</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">100%</div>
+                    <div class="stat-label">Open Source</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Plateformes</div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#features">Fonctionnalités</a></li>
-            <li><a href="#download">Téléchargement</a></li>
-            <li><a href="#documentation">Documentation</a></li>
-            <li><a href="#examples">Exemples</a></li>
-            <li><a href="#support">Support</a></li>
-        </ul>
+    <!-- Navigation -->
+    <nav class="nav-sticky">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#features">Fonctionnalités</a></li>
+                <li><a href="#how-it-works">Comment ça marche</a></li>
+                <li><a href="#download">Téléchargement</a></li>
+                <li><a href="#get-started">Démarrer</a></li>
+                <li><a href="#documentation">Documentation</a></li>
+                <li><a href="#contribute">Contribuer</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main>
-        <section id="features" class="section">
-            <div class="container content-width">
-                <h2>Fonctionnalités</h2>
-                <div class="features-grid">
-                    <div class="feature-item card">
-                        <h3>Backtesting Rapide via C++</h3>
-                        <p>L'execution d'un backtest est extrêmement rapide grâce à l'utilisation de C++. 
-                        Il est possible d'executer un backtest sur plusieurs années en moins de 5 secondes.</p>
-                    </div>
-                    <div class="feature-item card">
-                        <h3>Interface Utilisateur multi plateforme Qt6</h3>
-                        <p>Grâce à Qt6, l'interface utilisateur est fluide et intuitive, offrant une expérience optimale sur toutes les plateformes.
-                            Les utilisateurs peuvent profiter d'une interface cohérente, que ce soit sur Windows, macOS ou Linux.
-                        </p>
-                    </div>
-                    <div class="feature-item card">
-                        <h3>Analyse Détaillée sur un graphe ChartDirector</h3>
-                        <p>Utilisation d'une librairie de graphiques ChartDirector pour des visualisations avancées des résultats de backtest.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="download" class="section">
-            <div class="container content-width">
-                <h2>Téléchargement</h2>
+        <!-- Key Features Section -->
+        <section id="features" class="section section-features">
+            <div class="container">
+                <h2 class="section-title">Pourquoi choisir Fast Backtest App ?</h2>
+                <p class="section-subtitle">Une solution complète pour analyser et optimiser vos stratégies de trading</p>
                 
-                <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Version Stable <span class="version-tag">v1.0.0.31</span></h3>
-                <p style="margin-bottom: 1.5rem;">Version testée et recommandée pour une utilisation en production</p>
-                <div class="downloads-grid">
-                    <div class="card">
-                        <h3>Windows (64-bit)</h3>
-                        <p>Dossier zip contenant l'executable et DLL</p>
-                        <a href="https://fintechcpp.github.io/fast-backtest-app-releases/downloads/fast-backtest-app-windows-v1.0.0.31.zip" class="button">Télécharger pour Windows</a>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Performance Exceptionnelle</h3>
+                        <p>Moteur C++20 multi-threadé pour des backtests ultra-rapides. Testez plusieurs années de données historiques en moins de 5 secondes.</p>
+                        <ul class="feature-list">
+                            <li>Optimisations avancées du code</li>
+                            <li>Traitement parallèle des données</li>
+                            <li>Cache intelligent des indicateurs</li>
+                            <li>Consommation mémoire optimisée</li>
+                        </ul>
                     </div>
 
-                    <div class="card">
-                        <h3>macOS</h3>
-                        <p>Bundle applicatif macOS (Intel & Apple Silicon)</p>
-                        <a href="https://fintechcpp.github.io/fast-backtest-app-releases/downloads/fast-backtest-app-macos-v1.0.0.30.dmg" class="button">Télécharger pour macOS</a>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3>Interface Professionnelle Qt6</h3>
+                        <p>Interface utilisateur moderne et intuitive construite avec Qt 6.8.3, offrant une expérience fluide sur toutes les plateformes.</p>
+                        <ul class="feature-list">
+                            <li>Design cohérent multi-plateforme</li>
+                            <li>Panneaux de configuration intuitifs</li>
+                            <li>Gestion de profils et templates</li>
+                            <li>Mise à jour automatique intégrée</li>
+                        </ul>
                     </div>
 
-                    <div class="card">
-                        <h3>Linux</h3>
-                        <p>Archive tar.gz pour distributions Debian/Ubuntu</p>
-                        <a href="https://fintechcpp.github.io/fast-backtest-app-releases/downloads/fast-backtest-app-linux-v1.0.0.31.tar.gz" class="button">Télécharger pour Linux</a>
-                    </div>
-                </div>
-
-                <h3 style="margin-top: 3rem; margin-bottom: 1rem;">Version Beta <span class="version-tag beta">1.0.0.32-beta</span></h3>
-                <p style="margin-bottom: 1.5rem;">Version de développement avec les dernières fonctionnalités (peut contenir des bugs)</p>
-                <div class="downloads-grid">
-                    <div class="card">
-                        <h3>Windows (64-bit)</h3>
-                        <p>Dossier zip contenant l'executable et DLL</p>
-                        <a href="https://fintechcpp.github.io/fast-backtest-app-releases/downloads/fast-backtest-app-windows-v1.0.0.32-beta.zip" class="button button-beta">Télécharger Beta Windows</a>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Visualisations Avancées</h3>
+                        <p>Graphiques haute qualité avec ChartDirector pour analyser vos résultats en profondeur.</p>
+                        <ul class="feature-list">
+                            <li>Graphiques de prix interactifs</li>
+                            <li>Courbes d'équité détaillées</li>
+                            <li>Heatmaps de performance</li>
+                            <li>Indicateurs techniques overlay</li>
+                        </ul>
                     </div>
 
-                    <div class="card">
-                        <h3>macOS</h3>
-                        <p>Bundle applicatif macOS (Intel & Apple Silicon)</p>
-                        <a href="https://fintechcpp.github.io/fast-backtest-app-releases/downloads/fast-backtest-app-macos-beta-latest.dmg" class="button button-beta">Télécharger Beta macOS</a>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Stratégies Sans Code</h3>
+                        <p>Créez des stratégies complexes avec notre système de filtres visuels, sans écrire une ligne de code.</p>
+                        <ul class="feature-list">
+                            <li>Éditeur de filtres drag & drop</li>
+                            <li>20+ indicateurs techniques intégrés</li>
+                            <li>Conditions logiques avancées</li>
+                            <li>Support Machine Learning (ONNX)</li>
+                        </ul>
                     </div>
 
-                    <div class="card">
-                        <h3>Linux</h3>
-                        <p>Archive tar.gz pour distributions Debian/Ubuntu</p>
-                        <a href="https://fintechcpp.github.io/fast-backtest-app-releases/downloads/fast-backtest-app-linux-v1.0.0.32-beta.tar.gz" class="button button-beta">Télécharger Beta Linux</a>
+                    <div class="feature-card">
+                        <div class="feature-icon">📈</div>
+                        <h3>Métriques Complètes</h3>
+                        <p>Plus de 50 métriques de performance pour évaluer vos stratégies en détail.</p>
+                        <ul class="feature-list">
+                            <li>Ratios de Sharpe, Sortino, Calmar</li>
+                            <li>Analyse des drawdowns</li>
+                            <li>Distribution des trades</li>
+                            <li>Exposition au marché</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🔧</div>
+                        <h3>Configuration Flexible</h3>
+                        <p>Contrôle total sur les paramètres du moteur de backtest pour une simulation réaliste.</p>
+                        <ul class="feature-list">
+                            <li>Spreads et commissions personnalisables</li>
+                            <li>Modes Netting/Hedging</li>
+                            <li>Gestion du slippage</li>
+                            <li>Limites de risque configurables</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="section section-how">
+            <div class="container">
+                <h2 class="section-title">Comment ça fonctionne ?</h2>
+                <p class="section-subtitle">Un workflow simple et efficace en 4 étapes</p>
+                
+                <div class="steps-container">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Configurez vos paramètres</h3>
+                            <p>Choisissez votre symbole, période, intervalle et paramètres de broker (spread, commission, levier).</p>
+                            <div class="step-image-placeholder">[Image: Panel de configuration générale]</div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Définissez votre stratégie</h3>
+                            <p>Utilisez l'éditeur visuel pour créer vos conditions d'entrée/sortie avec des filtres basés sur des indicateurs techniques.</p>
+                            <div class="step-image-placeholder">[Image: Éditeur de stratégie]</div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Lancez le backtest</h3>
+                            <p>Cliquez sur "Lancer le backtest" et observez le moteur C++ traiter des milliers de bougies en quelques secondes.</p>
+                            <div class="step-image-placeholder">[Image: Bouton et progress bar]</div>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Analysez les résultats</h3>
+                            <p>Explorez les statistiques détaillées, graphiques interactifs et l'historique complet de tous vos trades.</p>
+                            <div class="step-image-placeholder">[Image: Vue des résultats]</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Architecture Section -->
+        <section id="architecture" class="section section-tech">
+            <div class="container">
+                <h2 class="section-title">Architecture Technique</h2>
+                <p class="section-subtitle">Une stack moderne pour des performances maximales</p>
+                
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <h3>🔥 Backend C++20</h3>
+                        <p><strong>Moteur de backtest ultra-rapide</strong></p>
+                        <ul>
+                            <li>Multi-threading pour calculs parallèles</li>
+                            <li>Templates modernes et optimisations compiler</li>
+                            <li>Gestion mémoire efficace avec smart pointers</li>
+                            <li>Sérialisation binaire avec Cereal</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-card">
+                        <h3>🖥️ Frontend Qt 6.8.3</h3>
+                        <p><strong>Interface native multi-plateforme</strong></p>
+                        <ul>
+                            <li>Widgets natifs pour chaque OS</li>
+                            <li>Signal/Slots pour communication asynchrone</li>
+                            <li>Model-View architecture pour la data</li>
+                            <li>Deployment automatisé par CMake</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-card">
+                        <h3>📊 ChartDirector</h3>
+                        <p><strong>Bibliothèque de graphiques professionnels</strong></p>
+                        <ul>
+                            <li>Rendering haute performance</li>
+                            <li>Support de millions de points de données</li>
+                            <li>Graphiques financiers spécialisés</li>
+                            <li>Export haute résolution</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-card">
+                        <h3>🧠 Machine Learning</h3>
+                        <p><strong>Intégration ONNX Runtime</strong></p>
+                        <ul>
+                            <li>Chargement de modèles ONNX</li>
+                            <li>Inférence en temps réel pendant backtest</li>
+                            <li>Features normalisées automatiquement</li>
+                            <li>Compatible TensorFlow, PyTorch</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="architecture-diagram">
+                    <h3 class="text-center">Flux de Données</h3>
+                    <div class="diagram-placeholder">
+                        [Diagramme: CSV Data → DataLoader → BacktestEngine (C++) → Results → Qt UI → ChartDirector Visualizations]
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section id="download" class="section section-download">
+            <div class="container">
+                <h2 class="section-title">Téléchargement</h2>
+                <p class="section-subtitle">Choisissez votre plateforme et commencez à backtester</p>
+                
+                <!-- Stable Version -->
+                <div class="version-block">
+                    <div class="version-header">
+                        <h3>
+                            <span class="version-icon">✅</span>
+                            Version Stable 
+                            <span class="version-tag">v1.0.0.31</span>
+                        </h3>
+                        <p>Version testée et recommandée pour une utilisation en production</p>
+                    </div>
+                    
+                    <div class="downloads-grid">
+                        <div class="download-card">
+                            <div class="platform-icon">🪟</div>
+                            <h4>Windows (64-bit)</h4>
+                            <p class="platform-desc">Pour Windows 10/11</p>
+                            <div class="download-info">
+                                <span class="file-type">ZIP</span>
+                                <span class="file-size">~85 MB</span>
+                            </div>
+                            <a href="https://fintechcpp.github.io/fast-backtest-app-releases/downloads/fast-backtest-app-windows-v1.0.0.31.zip" 
+                               class="button button-primary button-download">
+                                <span class="button-icon">⬇</span> Télécharger
+                            </a>
+                            <details class="install-details">
+                                <summary>Instructions d'installation</summary>
+                                <ol>
+                                    <li>Téléchargez et extrayez le ZIP</li>
+                                    <li>Lancez <code>backtestapp.exe</code></li>
+                                    <li>Aucune installation requise !</li>
+                                </ol>
+                            </details>
+                        </div>
+
+                        <div class="download-card">
+                            <div class="platform-icon">🍎</div>
+                            <h4>macOS</h4>
+                            <p class="platform-desc">Intel & Apple Silicon</p>
+                            <div class="download-info">
+                                <span class="file-type">DMG</span>
+                                <span class="file-size">~90 MB</span>
+                            </div>
+                            <a href="https://fintechcpp.github.io/fast-backtest-app-releases/downloads/fast-backtest-app-macos-v1.0.0.30.dmg" 
+                               class="button button-primary button-download">
+                                <span class="button-icon">⬇</span> Télécharger
+                            </a>
+                            <details class="install-details">
+                                <summary>Instructions d'installation</summary>
+                                <ol>
+                                    <li>Téléchargez et montez le DMG</li>
+                                    <li>Glissez-déposez dans Applications</li>
+                                    <li>Si bloqué, autorisez dans Sécurité</li>
+                                </ol>
+                            </details>
+                        </div>
+
+                        <div class="download-card">
+                            <div class="platform-icon">🐧</div>
+                            <h4>Linux</h4>
+                            <p class="platform-desc">Debian/Ubuntu 20.04+</p>
+                            <div class="download-info">
+                                <span class="file-type">TAR.GZ</span>
+                                <span class="file-size">~80 MB</span>
+                            </div>
+                            <a href="https://fintechcpp.github.io/fast-backtest-app-releases/downloads/fast-backtest-app-linux-v1.0.0.31.tar.gz" 
+                               class="button button-primary button-download">
+                                <span class="button-icon">⬇</span> Télécharger
+                            </a>
+                            <details class="install-details">
+                                <summary>Instructions d'installation</summary>
+                                <ol>
+                                    <li><code>tar -xzf fast-backtest-app-linux-*.tar.gz</code></li>
+                                    <li><code>cd fast-backtest-app-linux</code></li>
+                                    <li><code>./backtestapp.sh</code></li>
+                                </ol>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beta Version -->
+                <div class="version-block version-beta">
+                    <div class="version-header">
+                        <h3>
+                            <span class="version-icon">🧪</span>
+                            Version Beta 
+                            <span class="version-tag beta">v1.0.0.32-beta</span>
+                        </h3>
+                        <p>Version de développement avec les dernières fonctionnalités (peut contenir des bugs)</p>
+                    </div>
+                    
+                    <div class="downloads-grid">
+                        <div class="download-card download-card-beta">
+                            <div class="platform-icon">🪟</div>
+                            <h4>Windows (64-bit)</h4>
+                            <a href="https://fintechcpp.github.io/fast-backtest-app-releases/downloads/fast-backtest-app-windows-v1.0.0.32-beta.zip" 
+                               class="button button-beta button-download">
+                                <span class="button-icon">⬇</span> Télécharger Beta
+                            </a>
+                        </div>
+
+                        <div class="download-card download-card-beta">
+                            <div class="platform-icon">🍎</div>
+                            <h4>macOS</h4>
+                            <a href="https://fintechcpp.github.io/fast-backtest-app-releases/downloads/fast-backtest-app-macos-beta-latest.dmg" 
+                               class="button button-beta button-download">
+                                <span class="button-icon">⬇</span> Télécharger Beta
+                            </a>
+                        </div>
+
+                        <div class="download-card download-card-beta">
+                            <div class="platform-icon">🐧</div>
+                            <h4>Linux</h4>
+                            <a href="https://fintechcpp.github.io/fast-backtest-app-releases/downloads/fast-backtest-app-linux-v1.0.0.32-beta.tar.gz" 
+                               class="button button-beta button-download">
+                                <span class="button-icon">⬇</span> Télécharger Beta
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- System Requirements -->
+                <div class="requirements-box">
+                    <h3>Configuration Requise</h3>
+                    <div class="requirements-grid">
+                        <div class="req-item">
+                            <strong>🖥️ Système d'exploitation</strong>
+                            <p>Windows 10/11, macOS 11+, Linux (Ubuntu 20.04+)</p>
+                        </div>
+                        <div class="req-item">
+                            <strong>💾 RAM</strong>
+                            <p>4 GB minimum, 8 GB recommandé</p>
+                        </div>
+                        <div class="req-item">
+                            <strong>💿 Espace disque</strong>
+                            <p>500 MB pour l'application + données</p>
+                        </div>
+                        <div class="req-item">
+                            <strong>🎮 Processeur</strong>
+                            <p>CPU 64-bit multi-core recommandé</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Started Section -->
+        <section id="get-started" class="section section-tutorial">
+            <div class="container">
+                <h2 class="section-title">Guide de Démarrage Rapide</h2>
+                <p class="section-subtitle">Lancez votre premier backtest en 5 minutes</p>
+
+                <div class="tutorial-steps">
+                    <div class="tutorial-step">
+                        <div class="tutorial-number">Étape 1</div>
+                        <div class="tutorial-content">
+                            <h3>📥 Préparez vos données</h3>
+                            <p>Fast Backtest App utilise des fichiers CSV au format OHLC (Open, High, Low, Close). La date est en UTC+0</p>
+                            <div class="code-block">
+                                <code>,date,open,high,low,close,volume
+2024-01-01T09:30:00,100.5,101.2,100.1,101.0,5000
+2024-01-01T09:31:00,101.0,101.5,100.8,101.3,4500</code>
+                            </div>
+                            <p>Importez vos fichiers CSV via le menu <strong>Données > Importer</strong></p>
+                            <div class="tip-box">
+                                <strong>💡 Astuce:</strong> Utilisez le notebook Jupyter fourni (<code>Notebooks/fetch_by_ibkr.py</code>) pour télécharger des données historiques depuis Interactive Brokers.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-number">Étape 2</div>
+                        <div class="tutorial-content">
+                            <h3>⚙️ Configurez les paramètres généraux</h3>
+                            <p>Dans le panneau de gauche, définissez:</p>
+                            <ul>
+                                <li><strong>Symbole:</strong> Choisissez parmi les fichiers détectés</li>
+                                <li><strong>Intervalle:</strong> 10secs, 20secs, 1min, 5min, 1h, 1d, etc.</li>
+                                <li><strong>Période:</strong> "6M" pour 6 mois, "1Y" pour 1 an</li>
+                                <li><strong>Capital initial:</strong> 10000 € par défaut</li>
+                                <li><strong>Spread:</strong> En pour mille (0.1 = 0.01%)</li>
+                                <li><strong>Commission:</strong> Frais par trade</li>
+                                <li><strong>Levier:</strong> Limite de levier (en multiple du capital)</li>
+                            </ul>
+                            <div class="screenshot-placeholder">[Capture d'écran: Panel de configuration générale]</div>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-number">Étape 3</div>
+                        <div class="tutorial-content">
+                            <h3>🎯 Créez votre stratégie</h3>
+                            <p>Cliquez sur "Ajouter une stratégie" puis "Modifier" pour configurer:</p>
+                            
+                            <h4>Exemple: Stratégie RSI simple</h4>
+                            <ol>
+                                <li><strong>Nom:</strong> "RSI Mean Reversion"</li>
+                                <li><strong>Filtres d'achat (LONG):</strong>
+                                    <ul>
+                                        <li>RSI(14) < 30 (survente)</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Filtres de vente (SHORT):</strong>
+                                    <ul>
+                                        <li>RSI(14) > 70 (surachat)</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Stop Loss:</strong> ATR-based, multiplicateur 2.0</li>
+                                <li><strong>Take Profit:</strong> Ratio SL, 1.5:1</li>
+                            </ol>
+                            
+                            <div class="screenshot-placeholder">[Capture d'écran: Éditeur de stratégie avec filtres]</div>
+                            
+                            <div class="tip-box">
+                                <strong>💡 Indicateurs disponibles:</strong> RSI, EMA, SMA, MACD, Bollinger Bands, Stochastic, ATR, CCI, SuperTrend, Pivot Points, et bien plus !
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-number">Étape 4</div>
+                        <div class="tutorial-content">
+                            <h3>🚀 Lancez le backtest</h3>
+                            <p>Cliquez sur le bouton vert <strong>"Lancer le backtest"</strong>. Le moteur C++ va:</p>
+                            <ul>
+                                <li>Charger et resampler les données si nécessaire</li>
+                                <li>Calculer tous les indicateurs requis</li>
+                                <li>Simuler chaque trade avec spreads/commissions</li>
+                                <li>Générer les résultats en quelques secondes</li>
+                            </ul>
+                            <div class="screenshot-placeholder">[Capture d'écran: Bouton de lancement + barre de progression]</div>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="tutorial-number">Étape 5</div>
+                        <div class="tutorial-content">
+                            <h3>📊 Analysez les résultats</h3>
+                            <p>Explorez les 3 onglets de résultats:</p>
+                            
+                            <h4>1. Statistiques</h4>
+                            <ul>
+                                <li>Profit net, Gross Profit/Loss</li>
+                                <li>Win rate, Profit Factor</li>
+                                <li>Sharpe Ratio, Sortino Ratio, Calmar Ratio</li>
+                                <li>Max Drawdown et durée</li>
+                                <li>Nombre de trades, exposition au marché</li>
+                                <li>Distribution des trades (heatmap horaire)</li>
+                            </ul>
+                            <div class="screenshot-placeholder">[Capture d'écran: Vue des statistiques]</div>
+                            
+                            <h4>2. Graphiques</h4>
+                            <ul>
+                                <li>Chandelier japonais avec indicateurs overlay</li>
+                                <li>Marqueurs d'entrée/sortie des trades</li>
+                                <li>Courbe d'équité vs Buy & Hold</li>
+                                <li>Zoom interactif sur trades spécifiques</li>
+                            </ul>
+                            <div class="screenshot-placeholder">[Capture d'écran: ChartView avec trades]</div>
+                            
+                            <h4>3. Historique</h4>
+                            <ul>
+                                <li>Table détaillée de tous les trades</li>
+                                <li>Date entrée/sortie, prix, P&L</li>
+                                <li>Durée, raison de clôture</li>
+                                <li>Exportable en CSV</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documentation Section -->
         <section id="documentation" class="section">
             <div class="container">
-                <h2>Documentation</h2>
+                <h2 class="section-title">Documentation</h2>
                 <div class="content-width">
-                    <nav class="doc-nav card">
-                        <h3>Sommaire</h3>
-                        <ul>
-                            <li><a href="#getting-started">Démarrage rapide</a></li>
-                            <li><a href="#installation">Installation</a></li>
-                            <li><a href="#configuration">Configuration</a></li>
-                            <li><a href="#strategies">Création de stratégies</a></li>
-                            <li><a href="#analysis">Analyse des résultats</a></li>
-                        </ul>
-                    </nav>
-                    
-                    <div id="getting-started">
-                        <h3>Démarrage rapide</h3>
-                        <p>Chargez vos donneés OHLC depuis un csv puis "Lancer le backtest"</p>
+                    <div class="doc-grid">
+                        <div class="doc-card">
+                            <h3>📚 Guide Utilisateur</h3>
+                            <p>Instructions détaillées pour toutes les fonctionnalités de l'interface.</p>
+                            <ul>
+                                <li>Configuration des paramètres</li>
+                                <li>Création de stratégies complexes</li>
+                                <li>Interprétation des métriques</li>
+                                <li>Gestion des profils</li>
+                            </ul>
+                        </div>
+
+                        <div class="doc-card">
+                            <h3>🔧 Guide Technique</h3>
+                            <p>Comprendre le moteur de backtest et ses paramètres avancés.</p>
+                            <ul>
+                                <li>Modes Netting vs Hedging</li>
+                                <li>Gestion des spreads et slippage</li>
+                                <li>Algorithmes de Stop Loss/Take Profit</li>
+                                <li>Limites de risque journalières</li>
+                            </ul>
+                        </div>
+
+                        <div class="doc-card">
+                            <h3>📊 Format de Données</h3>
+                            <p>Spécifications pour vos fichiers CSV de données de marché.</p>
+                            <div class="code-block">
+                                <code># Format requis:
+timestamp,open,high,low,close,volume
+# Timestamp: ISO 8601 format
+# Prix: format décimal
+# Volume: optionnel</code>
+                            </div>
+                        </div>
+
+                        <div class="doc-card">
+                            <h3>🧪 Machine Learning</h3>
+                            <p>Intégrez vos modèles ML entrainés pour des signaux avancés.</p>
+                            <ul>
+                                <li>Export de modèles en ONNX</li>
+                                <li>Notebook de conversion (TensorFlow/PyTorch → ONNX)</li>
+                                <li>Configuration des features normalisées</li>
+                                <li>Interprétation des prédictions</li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div id="installation">
-                        <h3>Installation</h3>
-                        <p>Instructions d'installation et de lancement par plateforme :</p>
-                        <ul>
-                            <li><strong>Windows (64-bit)</strong>
-                                <p>Téléchargez le fichier ZIP, décompressez-le dans un dossier. Le binaire s'appelle <code>backtestapp.exe</code>. Double-cliquez sur l'exécutable ou lancez-le depuis PowerShell :</p>
-                                <pre>cd C:\chemin\vers\fast-backtest-app-windows
-.\backtestapp.exe</pre>
-                                <p>Le fichier de configuration par défaut <code>backtest_config.ini</code> peut être édité dans le même dossier.</p>
-                            </li>
+                    <div class="installation-guide">
+                        <h3>Installation par Plateforme</h3>
+                        
+                        <div class="platform-guide">
+                            <h4>🪟 Windows</h4>
+                            <ol>
+                                <li>Téléchargez le fichier ZIP</li>
+                                <li>Extrayez dans le dossier de votre choix</li>
+                                <li>Double-cliquez sur <code>backtestapp.exe</code></li>
+                            </ol>
+                            <div class="code-block">
+                                <code># Via PowerShell:
+cd C:\chemin\vers\fast-backtest-app-windows
+.\backtestapp.exe</code>
+                            </div>
+                        </div>
 
-                            <li><strong>macOS (Intel & Apple Silicon)</strong>
-                                <p>Téléchargez le DMG, montez-le puis glissez-déposez <code>FastBacktestApp.app</code> dans le dossier <code>/Applications</code>. Pour lancer :</p>
-                                <pre>open /Applications/FastBacktestApp.app</pre>
-                                <p>Si macOS bloque l'ouverture, autorisez l'application via Sécurité et confidentialité → Autoriser quand même.</p>
-                            </li>
+                        <div class="platform-guide">
+                            <h4>🍎 macOS</h4>
+                            <ol>
+                                <li>Téléchargez et montez le DMG</li>
+                                <li>Glissez-déposez dans /Applications</li>
+                                <li>Si bloqué: Sécurité → "Autoriser quand même"</li>
+                            </ol>
+                            <div class="code-block">
+                                <code># Via Terminal:
+open /Applications/FastBacktestApp.app</code>
+                            </div>
+                        </div>
 
-                            <li><strong>Linux (Debian/Ubuntu)</strong>
-                                <p>Téléchargez l'archive <code>.tar.gz</code> et extrayez-la :</p>
-                                <pre>tar -xzf fast-backtest-app-linux-*.tar.gz
+                        <div class="platform-guide">
+                            <h4>🐧 Linux</h4>
+                            <ol>
+                                <li>Installez les dépendances système si nécessaire</li>
+                                <li>Extrayez l'archive tar.gz</li>
+                                <li>Lancez via le script wrapper</li>
+                            </ol>
+                            <div class="code-block">
+                                <code>tar -xzf fast-backtest-app-linux-*.tar.gz
 cd fast-backtest-app-linux
-./backtestapp.sh</pre>
-                                <p>Le script <code>backtestapp.sh</code> configure <code>LD_LIBRARY_PATH</code> et <code>QT_PLUGIN_PATH</code> pour utiliser les bibliothèques fournies. Assurez-vous que le script est exécutable (<code>chmod +x backtestapp.sh</code>).</p>
+chmod +x backtestapp.sh
+./backtestapp.sh</code>
+                            </div>
+                            <p><strong>Note:</strong> Le script configure automatiquement <code>LD_LIBRARY_PATH</code> et <code>QT_PLUGIN_PATH</code>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contribute Section -->
                             </li>
                         </ul>
                         <p>Remarques :</p>
@@ -161,91 +655,451 @@ cd fast-backtest-app-linux
             </div>
         </section>
 
-        <section id="support" class="section">
-            <div class="container content-width">
-            <h2>Support & Communauté</h2>
+        <!-- Contribute Section -->
+        <section id="contribute" class="section section-contribute">
+            <div class="container">
+                <h2 class="section-title">Contribuer au Projet</h2>
+                <p class="section-subtitle">Fast Backtest App est open source - rejoignez la communauté !</p>
+                
+                <div class="contribute-grid">
+                    <div class="contribute-card">
+                        <h3>🐛 Signaler un Bug</h3>
+                        <p>Vous avez trouvé un problème ? Aidez-nous à l'améliorer !</p>
+                        <ol>
+                            <li>Vérifiez les issues existantes</li>
+                            <li>Collectez les logs (dossier <code>logs/</code>)</li>
+                            <li>Créez une issue détaillée sur GitHub</li>
+                        </ol>
+                        <a href="https://github.com/FinTechCpp/fast-backtest-app/issues/new?template=bug_report.md" 
+                           class="button button-outline" target="_blank">
+                            Signaler un bug
+                        </a>
+                    </div>
 
-            <div class="card">
-                <h3>FAQ</h3>
-                <div class="faq">
-                <details>
-                    <summary>Quelle est la différence entre la version stable et beta ?</summary>
-                    <p><strong>Version Stable :</strong> Version testée et recommandée pour une utilisation en production. Elle a passé tous les tests et est considérée comme stable et fiable.</p>
-                    <p><strong>Version Beta :</strong> Version de développement avec les dernières fonctionnalités. Elle peut contenir des bugs et est destinée aux utilisateurs qui souhaitent tester les nouvelles fonctionnalités avant leur sortie officielle. À utiliser avec précaution.</p>
-                </details>
+                    <div class="contribute-card">
+                        <h3>💡 Proposer une Feature</h3>
+                        <p>Une idée pour améliorer l'application ?</p>
+                        <ol>
+                            <li>Vérifiez les issues existantes</li>
+                            <li>Décrivez votre use case en détail</li>
+                            <li>Proposez une implémentation si possible</li>
+                        </ol>
+                        <a href="https://github.com/FinTechCpp/fast-backtest-app/issues/new?template=feature_request.md" 
+                           class="button button-outline" target="_blank">
+                            Proposer une feature
+                        </a>
+                    </div>
 
-                <details>
-                    <summary>Quelles plateformes sont supportées ?</summary>
-                    <p>Windows (64-bit), macOS (Intel & Apple Silicon) et Linux (Debian/Ubuntu). Utilisez les liens de la section Téléchargement pour chaque package.</p>
-                </details>
+                    <div class="contribute-card">
+                        <h3>👨‍💻 Contribuer au Code</h3>
+                        <p>Développez de nouvelles fonctionnalités ou corrigez des bugs !</p>
+                        <div class="code-block">
+                            <code># Fork et clone
+git clone https://github.com/[YOU]/fast-backtest-app
+cd fast-backtest-app
+git submodule update --init --recursive
 
-                <details>
-                    <summary>Quel format pour les données OHLC ?</summary>
-                    <p>CSV avec colonnes Date, Open, High, Low, Close, Volume. La date peut être au format ISO (YYYY-MM-DD ou YYYY-MM-DD HH:MM:SS). Les en-têtes sont recommandés.</p>
-                </details>
+# Créez une branche
+git checkout -b feature/ma-super-feature
 
-                <details>
-                    <summary>Comment lancer un backtest ?</summary>
-                    <p>Chargez votre fichier CSV via Fichier → Ouvrir, sélectionnez la stratégie et la période, puis cliquez sur "Lancer le backtest".</p>
-                </details>
+# Build et test
+./build_and_run.sh --debug
 
-                <details>
-                    <summary>Où trouver les logs et la configuration ?</summary>
-                    <p>Les logs sont dans le dossier <code>logs</code> situé à côté de l'exécutable. Le fichier de configuration par défaut est <code>backtest_config.ini</code> dans le même dossier. Sur Linux, vérifiez aussi <code>~/.fast-backtest-app/</code> pour les configs utilisateur.</p>
-                </details>
+# Commit et push
+git commit -am "Add: ma super feature"
+git push origin feature/ma-super-feature</code>
+                        </div>
+                        <a href="https://github.com/FinTechCpp/fast-backtest-app/blob/main/CONTRIBUTING.md" 
+                           class="button button-outline" target="_blank">
+                            Guide de contribution
+                        </a>
+                    </div>
 
-                <details>
-                    <summary>Comment mettre à jour l'application ?</summary>
-                    <p>Téléchargez la nouvelle version depuis la page de téléchargement et remplacez les fichiers. Conservez la structure du dossier fourni pour que Qt et les bibliothèques soient correctement résolues.</p>
-                </details>
+                    <div class="contribute-card">
+                        <h3>📚 Améliorer la Documentation</h3>
+                        <p>Aidez les autres utilisateurs en améliorant les docs !</p>
+                        <ul>
+                            <li>Corriger des typos ou clarifier des sections</li>
+                            <li>Ajouter des exemples de stratégies</li>
+                            <li>Traduire en d'autres langues</li>
+                            <li>Créer des tutoriels vidéo</li>
+                        </ul>
+                    </div>
+                </div>
 
-                <details>
-                    <summary>Licence et utilisation commerciale</summary>
-                    <p>Consultez le fichier <code>LICENSE</code> inclus dans l'archive ou la page du dépôt GitHub pour les termes de licence et les restrictions d'utilisation.</p>
-                </details>
+                <div class="dev-setup-guide">
+                    <h3>🛠️ Guide de Développement</h3>
+                    
+                    <div class="setup-steps">
+                        <h4>1. Prérequis</h4>
+                        <ul>
+                            <li><strong>CMake:</strong> 3.14+ (recommandé 4.0.3+)</li>
+                            <li><strong>Compilateur:</strong> GCC 7+, Clang 8+, MSVC 2019+</li>
+                            <li><strong>Qt:</strong> 6.8.3 (modules: Core, Widgets, Charts, Network)</li>
+                            <li><strong>Git:</strong> Pour les submodules</li>
+                        </ul>
+
+                        <h4>2. Structure du Projet</h4>
+                        <div class="code-block">
+                            <code>fast-backtest-app/
+├── backtestApp/          # Application Qt
+│   ├── include/          # Headers
+│   ├── src/              # Sources C++
+│   └── CMakeLists.txt
+├── ThirdParty/
+│   ├── Strategies/       # Moteur de backtest C++
+│   ├── ChartDirector/    # Lib de graphiques
+│   └── ...               # Autres dépendances
+├── marketData/           # Données CSV
+├── Notebooks/            # Jupyter notebooks
+└── CMakeLists.txt</code>
+                        </div>
+
+                        <h4>3. Build Instructions</h4>
+                        
+                        <div class="platform-build">
+                            <strong>Linux/macOS:</strong>
+                            <div class="code-block">
+                                <code># Debug build
+./build_and_run.sh --debug
+
+# Release build
+./build_and_run.sh
+
+# Build sans lancer
+./build_and_run.sh --no-run
+
+# Clean build
+./build_and_run.sh --clean</code>
+                            </div>
+                        </div>
+
+                        <div class="platform-build">
+                            <strong>Windows (Visual Studio):</strong>
+                            <div class="code-block">
+                                <code># Générer les fichiers Visual Studio
+cmake -B build -S . -DBUILD_WITH_DEBUG=ON
+
+# Build depuis VS ou ligne de commande
+cmake --build build --config Debug --parallel
+
+# Ou depuis VS Code avec la tâche "build-debug-windows"</code>
+                            </div>
+                        </div>
+
+                        <h4>4. Architecture du Code</h4>
+                        <ul>
+                            <li><strong>Frontend:</strong> <code>backtestApp/src/ui/</code> - Widgets Qt, vues, menus</li>
+                            <li><strong>Backend:</strong> <code>ThirdParty/Strategies/</code> - Moteur C++ de backtest</li>
+                            <li><strong>Utilities:</strong> <code>backtestApp/src/components/Utils/</code> - DataLoader, etc.</li>
+                            <li><strong>Indicators:</strong> <code>ThirdParty/Strategies/include/Indicators/</code> - RSI, MACD, etc.</li>
+                        </ul>
+
+                        <h4>5. Guidelines de Code</h4>
+                        <ul>
+                            <li>Suivre le style de code existant (camelCase pour Qt, snake_case pour STL)</li>
+                            <li>Commenter les fonctions complexes</li>
+                            <li>Utiliser des smart pointers (<code>std::unique_ptr</code>, <code>std::shared_ptr</code>)</li>
+                            <li>Éviter les raw loops, préférer STL algorithms</li>
+                            <li>Tester sur les 3 plateformes si possible</li>
+                        </ul>
+
+                        <h4>6. Déboguer l'Application</h4>
+                        <ul>
+                            <li>Les logs sont dans <code>logs/backtestApp/</code></li>
+                            <li>Utilisez <code>qDebug()</code> pour le debug Qt</li>
+                            <li>Utilisez <code>logger->debug()</code> dans les stratégies</li>
+                            <li>Configurez VS Code avec le <code>.vscode/launch.json</code> fourni</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="roadmap-section">
+                    <h3>🗺️ Roadmap</h3>
+                    <div class="roadmap-grid">
+                        <div class="roadmap-item roadmap-in-progress">
+                            <h4>✅ En cours</h4>
+                            <ul>
+                                <li>Optimisation multi-threading avancée</li>
+                                <li>Support ONNX pour ML avancé</li>
+                                <li>Export de rapports PDF/HTML</li>
+                                <li>Mode dark theme</li>
+                            </ul>
+                        </div>
+
+                        <div class="roadmap-item roadmap-planned">
+                            <h4>📅 Planifié</h4>
+                            <ul>
+                                <li>Walk-forward optimization</li>
+                                <li>Portfolio backtesting (multi-symboles)</li>
+                                <li>API REST pour automatisation</li>
+                                <li>Graphiques 3D pour métriques</li>
+                                <li>Support de données tick-by-tick</li>
+                            </ul>
+                        </div>
+
+                        <div class="roadmap-item roadmap-ideas">
+                            <h4>💭 Idées</h4>
+                            <ul>
+                                <li>Intégration avec brokers live (paper trading)</li>
+                                <li>Cloud storage pour résultats</li>
+                                <li>Mode collaboratif (partage de stratégies)</li>
+                                <li>Genetic algorithm pour optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="text-center mt-4">
+                        <a href="https://github.com/FinTechCpp/fast-backtest-app/projects" class="button button-primary" target="_blank">
+                            Voir le projet sur GitHub
+                        </a>
+                    </p>
                 </div>
             </div>
+        </section>
 
-            <div class="card">
-                <h3>Signaler un bug</h3>
-                <p>Avant d'ouvrir une issue, merci de vérifier la FAQ et les issues existantes.</p>
+        <!-- Support Section -->
+        <section id="support" class="section section-support">
+            <div class="container">
+                <h2 class="section-title">Support & Communauté</h2>
+                <p class="section-subtitle">Obtenez de l'aide et partagez vos expériences</p>
 
-                <ol>
-                <li>
-                    <strong>Rassembler les informations :</strong>
-                    version de l'application (Aide → À propos), système d'exploitation et architecture, fichier <code>backtest_config.ini</code>, extrait de données reproduisant le problème, captures d'écran et logs (dossier <code>logs</code>).
-                </li>
-                <li>
-                    <strong>Documenter la reproduction :</strong>
-                    étapes exactes pour reproduire, comportement attendu vs observé, messages d'erreur complets ou sortie terminal.
-                </li>
-                <li>
-                    <strong>Ouvrir une issue :</strong>
-                    Créez une nouvelle issue sur GitHub → <a href="https://github.com/FinTechCpp/fast-backtest-app-releases/issues">https://github.com/FinTechCpp/fast-backtest-app-releases/issues</a>. Collez les informations ci‑dessus et joignez les fichiers (logs, extrait CSV).
-                </li>
-                <li>
-                    <strong>Alternative :</strong>
-                    Si vous ne pouvez pas attacher de fichiers via GitHub, compressez-les et envoyez-les à <em>support@fintechcpp.org</em> en précisant le lien de l'issue ou le titre du problème.
-                </li>
-                </ol>
+                <div class="support-grid">
+                    <div class="support-card">
+                        <div class="support-icon">📖</div>
+                        <h3>Documentation</h3>
+                        <p>Guides complets et références API</p>
+                        <a href="https://github.com/FinTechCpp/fast-backtest-app/wiki" class="button button-outline" target="_blank">
+                            Consulter le Wiki
+                        </a>
+                    </div>
 
-                <p>Les rapports contenant une reproduction minimale et les logs sont traités en priorité.</p>
-            </div>
+                    <div class="support-card">
+                        <div class="support-icon">💬</div>
+                        <h3>Discord</h3>
+                        <p>Rejoignez la communauté Discord</p>
+                        <a href="https://discord.gg/your-invite-link" class="button button-outline" target="_blank">
+                            Rejoindre Discord
+                        </a>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="support-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>Support technique par email</p>
+                        <a href="mailto:support@fintechcpp.org" class="button button-outline">
+                            Contacter par Email
+                        </a>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="support-icon">🐙</div>
+                        <h3>GitHub Issues</h3>
+                        <p>Bugs et demandes de features</p>
+                        <a href="https://github.com/FinTechCpp/fast-backtest-app/issues" class="button button-outline" target="_blank">
+                            Ouvrir une Issue
+                        </a>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h3>❓ Questions Fréquentes</h3>
+                    <div class="faq-grid">
+                        <details class="faq-item">
+                            <summary>Quelle est la différence entre la version stable et beta ?</summary>
+                            <div class="faq-content">
+                                <p><strong>Version Stable :</strong> Version testée et recommandée pour une utilisation en production. Elle a passé tous les tests et est considérée comme stable et fiable.</p>
+                                <p><strong>Version Beta :</strong> Version de développement avec les dernières fonctionnalités. Elle peut contenir des bugs et est destinée aux utilisateurs qui souhaitent tester les nouvelles fonctionnalités avant leur sortie officielle.</p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary>Quelles plateformes sont supportées ?</summary>
+                            <div class="faq-content">
+                                <p>Fast Backtest App est disponible pour:</p>
+                                <ul>
+                                    <li><strong>Windows:</strong> 10/11 (64-bit)</li>
+                                    <li><strong>macOS:</strong> 11+ (Intel et Apple Silicon)</li>
+                                    <li><strong>Linux:</strong> Ubuntu 20.04+, Debian 10+ (et dérivés)</li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary>Quel format de données est requis ?</summary>
+                            <div class="faq-content">
+                                <p>Format CSV avec les colonnes suivantes:</p>
+                                <div class="code-block">
+                                    <code>timestamp,open,high,low,close,volume</code>
+                                </div>
+                                <p><strong>timestamp:</strong> Format ISO 8601 (YYYY-MM-DDTHH:MM:SS)</p>
+                                <p><strong>Prix:</strong> Format décimal (point comme séparateur)</p>
+                                <p><strong>Volume:</strong> Optionnel</p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary>Comment charger mes propres données ?</summary>
+                            <div class="faq-content">
+                                <p>Deux méthodes:</p>
+                                <ol>
+                                    <li>Placez vos fichiers CSV dans le dossier <code>marketData/</code></li>
+                                    <li>Ou utilisez Menu → Données → Définir dossier personnalisé</li>
+                                    <li>Ou utilisez Données → Importer</li>
+                                </ol>
+                                <p>L'application détecte automatiquement les nouveaux fichiers.</p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary>Combien de temps prend un backtest ?</summary>
+                            <div class="faq-content">
+                                <p>Cela dépend de:</p>
+                                <ul>
+                                    <li>Nombre de bougies (périodes testées)</li>
+                                    <li>Complexité de la stratégie (nombre d'indicateurs)</li>
+                                    <li>Puissance de votre CPU</li>
+                                </ul>
+                                <p><strong>Exemples typiques:</strong></p>
+                                <ul>
+                                    <li>6 mois, 5min: ~2-3 secondes</li>
+                                    <li>2 ans, 1h: ~1-2 secondes</li>
+                                    <li>5 ans, 1d: <1 seconde</li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary>Puis-je utiliser mes modèles de Machine Learning ?</summary>
+                            <div class="faq-content">
+                                <p>Oui ! Fast Backtest App supporte les modèles ONNX.</p>
+                                <ol>
+                                    <li>Entraînez votre modèle avec TensorFlow/PyTorch/scikit-learn</li>
+                                    <li>Exportez-le au format ONNX (voir <code>Notebooks/onnx_conversion.ipynb</code>)</li>
+                                    <li>Chargez-le dans la configuration de stratégie</li>
+                                    <li>Utilisez les prédictions comme filtres d'entrée</li>
+                                </ol>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary>Où trouver les logs en cas de problème ?</summary>
+                            <div class="faq-content">
+                                <p>Les logs sont stockés dans:</p>
+                                <ul>
+                                    <li><strong>Windows:</strong> <code>C:\chemin\vers\app\logs\backtestApp\</code></li>
+                                    <li><strong>macOS:</strong> <code>/Applications/FastBacktestApp.app/Contents/logs/</code></li>
+                                    <li><strong>Linux:</strong> <code>./logs/backtestApp/</code> ou <code>~/.fast-backtest-app/logs/</code></li>
+                                </ul>
+                                <p>Format: <code>backtestSession_HH-MM-SS.log</code></p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary>Comment mettre à jour l'application ?</summary>
+                            <div class="faq-content">
+                                <p>L'application vérifie automatiquement les nouvelles versions au démarrage.</p>
+                                <p><strong>Mise à jour manuelle:</strong></p>
+                                <ol>
+                                    <li>Téléchargez la nouvelle version</li>
+                                    <li>Remplacez l'ancienne installation</li>
+                                    <li>Conservez vos fichiers de profils et données</li>
+                                </ol>
+                                <p><strong>Mise à jour automatique (Windows):</strong> Cliquez sur "Télécharger et Installer" dans le dialogue de mise à jour.</p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary>L'application est-elle gratuite ?</summary>
+                            <div class="faq-content">
+                                <p><strong>Oui, 100% gratuite et open source !</strong></p>
+                                <p>Sous licence MIT, vous pouvez:</p>
+                                <ul>
+                                    <li>Utiliser gratuitement à des fins personnelles ou commerciales</li>
+                                    <li>Modifier le code source</li>
+                                    <li>Contribuer au projet</li>
+                                    <li>Créer des forks</li>
+                                </ul>
+                                <p>Voir le fichier LICENSE pour plus de détails.</p>
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary>Comment contribuer au projet ?</summary>
+                            <div class="faq-content">
+                                <p>Plusieurs façons de contribuer:</p>
+                                <ul>
+                                    <li>🐛 Signaler des bugs sur GitHub Issues</li>
+                                    <li>💡 Proposer des features</li>
+                                    <li>👨‍💻 Contribuer du code (Pull Requests)</li>
+                                    <li>📚 Améliorer la documentation</li>
+                                    <li>⭐ Mettre une étoile sur GitHub</li>
+                                    <li>💬 Aider d'autres utilisateurs sur Discord</li>
+                                </ul>
+                                <p>Consultez la section <a href="#contribute">Contribuer</a> pour plus de détails.</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <div class="content-width">
-                <div class="text-center">
-                    <p>Fast Backtest App © 2025</p>
-                    <p>
-                        <a href="https://github.com/FinTechCpp/fast-backtest-app-releases">GitHub</a> |
-                        <a href="#privacy">Politique de confidentialité</a> |
-                        <a href="#terms">Conditions d'utilisation</a>
-                    </p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Fast Backtest App</h4>
+                    <p>Backtesting haute performance pour traders professionnels</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/FinTechCpp/fast-backtest-app" target="_blank" aria-label="GitHub">
+                            <span class="social-icon">⭐</span> GitHub
+                        </a>
+                        <a href="https://discord.gg/your-invite-link" target="_blank" aria-label="Discord">
+                            <span class="social-icon">💬</span> Discord
+                        </a>
+                    </div>
                 </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Fonctionnalités</a></li>
+                        <li><a href="#download">Téléchargement</a></li>
+                        <li><a href="#get-started">Guide de démarrage</a></li>
+                        <li><a href="#documentation">Documentation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Communauté</h4>
+                    <ul class="footer-links">
+                        <li><a href="#contribute">Contribuer</a></li>
+                        <li><a href="https://github.com/FinTechCpp/fast-backtest-app/issues" target="_blank">Issues</a></li>
+                        <li><a href="https://github.com/FinTechCpp/fast-backtest-app/discussions" target="_blank">Discussions</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Légal</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/FinTechCpp/fast-backtest-app/blob/main/LICENSE" target="_blank">Licence MIT</a></li>
+                        <li><a href="#privacy">Confidentialité</a></li>
+                        <li><a href="#terms">Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fast Backtest App. Tous droits réservés.</p>
+                <p>Fait avec ❤️ par <a href="https://github.com/FinTechCpp" target="_blank">FinTech C++</a></p>
+                <p class="footer-tech">
+                    <span class="tech-badge">C++20</span>
+                    <span class="tech-badge">Qt 6.8.3</span>
+                    <span class="tech-badge">ChartDirector</span>
+                    <span class="tech-badge">CMake</span>
+                </p>
             </div>
         </div>
     </footer>
